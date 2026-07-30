@@ -1,0 +1,14 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/Looking-Glass/bridge.js + openapi/looking-glass-bridge-openapi.yml
+summary:
+  types: []
+  model: none
+  notes: >-
+    The Looking Glass Bridge HTTP REST API is a local loopback service
+    (http://localhost:33334/) with no authentication tokens or API keys. Access
+    control is by the trusted-origin loopback boundary — only processes on the
+    host machine can reach Bridge. Sessions are namespaced by an "orchestration"
+    token returned from enter_orchestration, but that token is a session
+    identifier for multi-app coordination, not an authentication credential.
+schemes: []

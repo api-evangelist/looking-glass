@@ -1,0 +1,187 @@
+# Looking Glass | Light Field Displays
+
+## Light Field Documentation
+
+- [Looking Glass User Guide](https://lfdocs.lookingglassfactory.com/readme.md): Everything you need to know about Looking Glass displays and software.
+- [Looking Glass Go](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-go.md): Learn everything you need to know about how to use your Looking Glass Go.
+- [Get Started with Looking Glass Go](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-go/get-started-with-looking-glass-go.md): This page will guide you through all the steps needed to get started with your Looking Glass Go.
+- [Using the Go Mobile App](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-go/using-the-mobile-app.md): You will need the Looking Glass mobile app if you intend to use your Looking Glass Go untethered from a computer and for syncing holograms to your device over WiFi.
+- [Standalone and Desktop Modes](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-go/standalone-and-desktop-modes.md)
+- [Power and LED States](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-go/power-and-led-states.md)
+- [Default Playlist](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-go/demo-holograms.md): Find a list of all the holograms that come pre-loaded on your Looking Glass Go.
+- [What's Next?](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-go/whats-next.md): A comprehensive list of other things you can do with your Looking Glass Go.
+- [Accessories](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-go/accessories.md)
+- [Advanced Playlist Creation](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-go/advanced-playlist-creation.md): This page describes the steps necessary to create a custom playlist on the Looking Glass Go.
+- [Manual Firmware Update](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-go/manual-firmware-update.md): This guide will walk you through how to manually update the firmware of your Looking Glass Go for cases with poor WiFi connectivity.
+- [Recovery Mode](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-go/recovery-mode.md): This page describes the workflow for recovering a Go that no longer boots.
+- [Common Troubleshooting Issues](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-go/troubleshooting.md): Being at the cutting edge of technology isn't always easy, luckily you're not alone! We've put together this guide here to help you if you hit any stumbling blocks on your path to the future.
+- [Looking Glass 16" Light Field Displays](https://lfdocs.lookingglassfactory.com/getting-started/16.md)
+- [Looking Glass 16" Light Field Display (Landscape)](https://lfdocs.lookingglassfactory.com/getting-started/16/landscape.md): Set up your Looking Glass 16" Light Field display.
+- [Looking Glass 16" Light Field Display (Portrait)](https://lfdocs.lookingglassfactory.com/getting-started/16/portrait.md): Setup your Looking Glass 16" Light Field display.
+- [Common Troubleshooting Issues](https://lfdocs.lookingglassfactory.com/getting-started/16/common-troubleshooting-issues.md)
+- [Looking Glass 27" Light Field Display](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-27-light-field-display.md): Our Looking Glass 27" Light Field Displays are the newest addition to the Looking Glass lineup.  Below, find the downloadable getting started guides for setting up the hardware displays.
+- [Looking Glass 27" Light Field Display (Landscape)](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-27-light-field-display/looking-glass-27-light-field-display-landscape.md): Set up your Looking Glass 27" Light Field Display.
+- [Looking Glass 27" Light Field Display (Portrait)](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-27-light-field-display/looking-glass-27-light-field-display-portrait.md): Set up your Looking Glass 27" Light Field Display.
+- [Looking Glass 32" Light Field Displays](https://lfdocs.lookingglassfactory.com/getting-started/32.md)
+- [Looking Glass 32" Light Field Display (Landscape)](https://lfdocs.lookingglassfactory.com/getting-started/32/landscape.md): Set up your Looking Glass 32" Light Field Display.
+- [Looking Glass 32" Light Field Display (Portrait)](https://lfdocs.lookingglassfactory.com/getting-started/32/portrait.md): Set up your Looking Glass 32" Light Field display.
+- [Common Troubleshooting Issues](https://lfdocs.lookingglassfactory.com/getting-started/32/common-troubleshooting-issues.md)
+- [Looking Glass 65" Light Field Display](https://lfdocs.lookingglassfactory.com/getting-started/looking-glass-65.md): This is the setup guide for the Looking Glass 65"
+- [Looking Glass Portrait](https://lfdocs.lookingglassfactory.com/getting-started/portrait.md): Learn everything you need to know about how to use your Looking Glass Portrait.
+- [Get Started with Looking Glass Portrait](https://lfdocs.lookingglassfactory.com/getting-started/portrait/get-started-with-looking-glass-portrait.md): This page will guide you through all the steps needed to get started with your Looking Glass Portrait.
+- [Demo Holograms](https://lfdocs.lookingglassfactory.com/getting-started/portrait/demo-holograms.md): Find a list of all the holograms that come pre-loaded on your Looking Glass Portrait. These are available to download as individual media files for our Looking Glass.
+- [Common Troubleshooting Issues](https://lfdocs.lookingglassfactory.com/getting-started/portrait/troubleshooting.md): Being at the cutting edge of technology isn't always easy, luckily you're not alone! We've put together this guide here to help you if you hit any stumbling blocks on your path to the future.
+- [Running Looking Glass Displays with iOS Devices](https://lfdocs.lookingglassfactory.com/getting-started/running-looking-glass-displays-with-ios-devices.md)
+- [Overview](https://lfdocs.lookingglassfactory.com/software/overview.md): A quick overview of the Looking Glass Light Field display software ecosystem.
+- [Looking Glass Bridge](https://lfdocs.lookingglassfactory.com/software/looking-glass-bridge.md): Required Software for Looking Glass Displays
+- [Using Looking Glass Bridge](https://lfdocs.lookingglassfactory.com/software/looking-glass-bridge/using-looking-glass-bridge.md): This page will guide you through using Looking Glass Bridge.
+- [Display Settings on Windows](https://lfdocs.lookingglassfactory.com/software/looking-glass-bridge/display-settings-on-windows.md): This page goes over how to adjust display settings on Windows computers.
+- [Display Settings on macOS](https://lfdocs.lookingglassfactory.com/software/looking-glass-bridge/display-settings-on-macos.md): This page goes over how to adjust your display settings on macOS computers.
+- [Display Settings on Linux](https://lfdocs.lookingglassfactory.com/software/looking-glass-bridge/display-settings-on-linux.md): This page will walk you through setting up your Looking Glass on Linux, we currently only support Ubuntu 22.04
+- [Troubleshooting](https://lfdocs.lookingglassfactory.com/software/looking-glass-bridge/troubleshooting.md): This page will walk you through troubleshooting steps with Looking Glass Bridge.
+- [Looking Glass Bridge SDK](https://lfdocs.lookingglassfactory.com/software/looking-glass-bridge-sdk.md): Render holograms to a Looking Glass display using code!
+- [Web Application Integration](https://lfdocs.lookingglassfactory.com/software/looking-glass-bridge-sdk/web-application-integration.md): Bring support for the Looking Glass display to your web app
+- [Integrating Native Applications](https://lfdocs.lookingglassfactory.com/software/looking-glass-bridge-sdk/integrating-native-applications.md): Bring support for the Looking Glass display to your application
+- [Native Function Reference](https://lfdocs.lookingglassfactory.com/software/looking-glass-bridge-sdk/native-function-reference.md)
+- [Looking Glass Core Migration Guide](https://lfdocs.lookingglassfactory.com/software/looking-glass-bridge-sdk/looking-glass-core-migration-guide.md): Update legacy Looking Glass apps to work with the latest generation of Looking Glass displays.
+- [Unity](https://lfdocs.lookingglassfactory.com/software/index.md)
+- [Unity Plugin 4.0-alpha](https://lfdocs.lookingglassfactory.com/software/index/unity-plugin-4.0-alpha.md): Version 4.0 of our Unity plugin features major performance improvements, with our benchmarks showing a 2x to 4x increase in performance over version 3.0.
+- [Migrating from Unity Plugin v3.x to v4.0](https://lfdocs.lookingglassfactory.com/software/index/unity-plugin-4.0-alpha/migrating-from-unity-plugin-v3.x-to-v4.0.md)
+- [Using Unity with Looking Glass](https://lfdocs.lookingglassfactory.com/software/index/tutorial.md)
+- [Setting up your Development Environment](https://lfdocs.lookingglassfactory.com/software/index/setting-up.md)
+- [Example Scenes](https://lfdocs.lookingglassfactory.com/software/index/example-scenes.md)
+- [Prefabs](https://lfdocs.lookingglassfactory.com/software/index/prefabs.md)
+- [Hologram Camera](https://lfdocs.lookingglassfactory.com/software/index/prefabs/hologram-camera.md)
+- [3D Cursor](https://lfdocs.lookingglassfactory.com/software/index/prefabs/3d-cursor.md)
+- [Dual Monitor Application](https://lfdocs.lookingglassfactory.com/software/index/prefabs/dual-monitor-application.md)
+- [Script Reference](https://lfdocs.lookingglassfactory.com/software/index/script-reference.md)
+- [HologramCamera.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/hologramcamera.cs.md)
+- [LKGDisplaySystem.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/lkgdisplaysystem.cs.md)
+- [QuiltCapture.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/quiltcapture.cs.md)
+- [Cursor3D.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/cursor3d.cs.md)
+- [OrbitControls.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/orbitcontrols.cs.md)
+- [BlockUploader.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/blockuploader.cs.md)
+- [MobileDMAController.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/mobiledmacontroller.cs.md): The MobileDMAController class facilitates using an iOS as a primary display while managing a second display for a Looking Glass device.
+- [iOS Sample Scene Scripts](https://lfdocs.lookingglassfactory.com/software/index/script-reference/ios-sample-scene-scripts.md)
+- [ChangeInteractionModality.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/ios-sample-scene-scripts/changeinteractionmodality.cs.md): Handles switching between lighting and rotation control modalities in the user interface. It enables or disables relevant controls and updates UI elements to reflect the active control.
+- [XYSlider.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/ios-sample-scene-scripts/xyslider.cs.md): Implements a 2D slider UI element. Tracks user interactions and translates the slider position into normalized values.
+- [XYSpotlight.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/ios-sample-scene-scripts/xyspotlight.cs.md): Controls the position and intensity of a spotlight in 3D space based on slider inputs.
+- [AudioRotateControl.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/ios-sample-scene-scripts/audiorotatecontrol.cs.md): Dynamically controls the pitch and volume of an AudioSource based on the rotational velocity of a ModelController.
+- [ModelController.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/ios-sample-scene-scripts/modelcontroller.cs.md): Handles rotation and zoom interactions for a 3D model in Unity, including touch/mouse input, pinch-to-zoom, and rotation inertia.
+- [DemoIOSUIController.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/ios-sample-scene-scripts/demoiosuicontroller.cs.md): Manages the overall UI state, including navigation between pages, calibration setup, and display updates.
+- [PageHandler.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/ios-sample-scene-scripts/pagehandler.cs.md): Handles navigation logic for individual UI pages.
+- [PageConnectHandler.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/ios-sample-scene-scripts/pageconnecthandler.cs.md): Extends PageHandler to handle connection-specific page logic.
+- [PageCalibrateHandler.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/ios-sample-scene-scripts/pagecalibratehandler.cs.md): Handles UI logic for the calibration page, including toggling the "Don't Show Again" setting and displaying test images.
+- [PageTestHandler.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/ios-sample-scene-scripts/pagetesthandler.cs.md): Manages the UI logic for the test page in a Looking Glass demo. It supports displaying, clearing, and customizing a test image quilt, along with handling the "Don't Show Again" preference.
+- [DynamicAlcove.cs](https://lfdocs.lookingglassfactory.com/software/index/script-reference/ios-sample-scene-scripts/dynamicalcove.cs.md): Dynamically creates a 3D alcove environment around the HologramCamera in Unity. Supports runtime updates, adjustable dimensions, and subdivided meshes for improved visual quality.
+- [Package Integrations](https://lfdocs.lookingglassfactory.com/software/index/package-integrations.md): Looking Glass Unity projects can be improved by integrating additional packages.  Here are some packages that are good compliments to the Looking Glass Unity Plugin.
+- [Built-in Render Pipeline Post-Processing](https://lfdocs.lookingglassfactory.com/software/index/package-integrations/post-processing.md)
+- [Developing for iOS](https://lfdocs.lookingglassfactory.com/software/index/developing-for-ios.md)
+- [Depth of Field and Other Post-Processing Effects](https://lfdocs.lookingglassfactory.com/software/index/depth-of-field-and-other-post-processing-effects.md)
+- [Quilt Video Audio and Playback](https://lfdocs.lookingglassfactory.com/software/index/quilt-video-audio-and-playback.md)
+- [Developing for Ultraleap Hand Tracking on Looking Glass](https://lfdocs.lookingglassfactory.com/software/index/leap.md)
+- [Looking Glass Pro (Legacy)](https://lfdocs.lookingglassfactory.com/software/index/pro.md)
+- [Additional Support](https://lfdocs.lookingglassfactory.com/software/index/additional-support.md)
+- [Change Log](https://lfdocs.lookingglassfactory.com/software/index/change-log.md)
+- [Looking Glass Studio](https://lfdocs.lookingglassfactory.com/software/looking-glass-studio.md)
+- [Using Looking Glass Studio](https://lfdocs.lookingglassfactory.com/software/looking-glass-studio/using-looking-glass-studio.md)
+- [Studio for iOS](https://lfdocs.lookingglassfactory.com/software/looking-glass-studio/studio-for-ios.md): Formerly called Hologram Video, Looking Glass Studio for iOS brings holographic media playback functionality to iOS devices.
+- [RGB-D Photo / Video](https://lfdocs.lookingglassfactory.com/software/looking-glass-studio/rgbd-photo-video.md)
+- [Quilt Images / Video](https://lfdocs.lookingglassfactory.com/software/looking-glass-studio/quilt-photo-video.md)
+- [iPhone Portrait Photos](https://lfdocs.lookingglassfactory.com/software/looking-glass-studio/iphone-portrait.md)
+- [Android Depth Photos](https://lfdocs.lookingglassfactory.com/software/looking-glass-studio/android-depth-photos.md)
+- [Samsung Portrait Mode](https://lfdocs.lookingglassfactory.com/software/looking-glass-studio/android-depth-photos/samsung-portrait-mode.md): Page made possible by contributions from @Boris-Schneider-Johne on the Looking Glass Discord Server
+- [Light Field Photosets](https://lfdocs.lookingglassfactory.com/software/looking-glass-studio/light-field-photosets.md)
+- [Exporting Holograms](https://lfdocs.lookingglassfactory.com/software/looking-glass-studio/hop.md): Holographic Object Package (.hop)
+- [Troubleshooting](https://lfdocs.lookingglassfactory.com/software/looking-glass-studio/troubleshooting.md)
+- [Liteforms™](https://lfdocs.lookingglassfactory.com/software/liteforms-tm.md): Liteforms™  is a holographic conversational AI character platform.
+- [Looking Glass Model Viewer](https://lfdocs.lookingglassfactory.com/software/looking-glass-model-viewer.md): A user guide for the Looking Glass Model Viewer
+- [Looking Glass Blocks](https://lfdocs.lookingglassfactory.com/software/looking-glass-blocks.md): Let's turn the internet 3D, one block at a time.
+- [Uploading, editing and sharing Quilts](https://lfdocs.lookingglassfactory.com/software/looking-glass-blocks/uploading-editing-and-sharing-quilts.md): Put your holograms on the internet. Share them with friends. The world needs more holographic cats 😺
+- [Viewing your holograms on different platforms](https://lfdocs.lookingglassfactory.com/software/looking-glass-blocks/viewing-your-holograms-on-different-platforms.md): Blocks allows you to bring holograms to a whole variety of different platforms, from desktops to tablets, mobile phones and VR headsets.
+- [Creator Tools](https://lfdocs.lookingglassfactory.com/software/creator-tools.md)
+- [Blender](https://lfdocs.lookingglassfactory.com/software/creator-tools/index-1.md): Our Blender Add-on supports Windows, MacOS, and Linux.
+- [Unreal Engine](https://lfdocs.lookingglassfactory.com/software/creator-tools/index.md): Make Incredible Holograms with the Looking Glass Unreal Plugin!
+- [Change Log and Old Versions](https://lfdocs.lookingglassfactory.com/software/creator-tools/index/change-log.md)
+- [Installing the Unreal Engine plugin](https://lfdocs.lookingglassfactory.com/software/creator-tools/index/setting-up.md)
+- [Using the Unreal Engine Plugin](https://lfdocs.lookingglassfactory.com/software/creator-tools/index/using-the-unreal-engine-plugin.md): Get started with Unreal Engine 5!
+- [Exporting Quilt Images and Video with Sequencer](https://lfdocs.lookingglassfactory.com/software/creator-tools/index/exporting-video.md)
+- [Using Blueprints](https://lfdocs.lookingglassfactory.com/software/creator-tools/index/holoplay-data-access.md)
+- [Packaging the Project](https://lfdocs.lookingglassfactory.com/software/creator-tools/index/packaging.md)
+- [Unreal Engine 4 (Legacy Support)](https://lfdocs.lookingglassfactory.com/software/creator-tools/index/unreal-engine-4-legacy-support.md): Our latest plugin supports Unreal Engine 5, however you can still use older versions of our Unreal Plugin for Unreal Engine 4.
+- [Unreal Engine 4 Quick Start](https://lfdocs.lookingglassfactory.com/software/creator-tools/index/unreal-engine-4-legacy-support/unreal-general.md)
+- [Using the HoloPlay Capture](https://lfdocs.lookingglassfactory.com/software/creator-tools/index/unreal-engine-4-legacy-support/unreal-general/holoplay-capture.md)
+- [Exporting Quilt Images and Video with Sequencer](https://lfdocs.lookingglassfactory.com/software/creator-tools/index/unreal-engine-4-legacy-support/unreal-general/exporting-video.md)
+- [WebXR](https://lfdocs.lookingglassfactory.com/software/creator-tools/webxr.md): Let's turn the Internet Holographic.
+- [PlayCanvas](https://lfdocs.lookingglassfactory.com/software/creator-tools/webxr/playcanvas.md): PlayCanvas is a WebGL Engine with a built in editor UI, allowing you to build interactive 3D scenes with an intuitive interface and high quality graphics.
+- [3️⃣ Three.JS](https://lfdocs.lookingglassfactory.com/software/creator-tools/webxr/three.js.md): It's never been easier to integrate your Three.js scene with the Looking Glass!
+- [React-Three-Fiber](https://lfdocs.lookingglassfactory.com/software/creator-tools/webxr/react-three-fiber.md): Looking Glass WebXR brings Looking Glass support to React-Three-Fiber. Take advantage of this incredible ecosystem of components and build on the shoulders of giants with this powerful toolset.
+- [Spline](https://lfdocs.lookingglassfactory.com/software/creator-tools/webxr/spline.md): Create beautiful 3D scenes with Spline directly in your browser. Export your spline scenes to three.js and view them in the Looking Glass with the Looking Glass WebXR Library
+- [Experiments](https://lfdocs.lookingglassfactory.com/software/experiments.md): Experiments are our latest alphas allowing us to explore what's possible in the world of holograms!
+- [Media Encoder](https://lfdocs.lookingglassfactory.com/software/experiments/media-encoder.md): Looking Glass Media Encoder uses WebCodecs and WebGPU to deliver fast media encoding straight from your web browser!
+- [Third Party Apps and Tools](https://lfdocs.lookingglassfactory.com/software/third-party-apps-and-tools.md)
+- [ParaView](https://lfdocs.lookingglassfactory.com/software/third-party-apps-and-tools/paraview.md)
+- [VTK (Visualization Toolkit)](https://lfdocs.lookingglassfactory.com/software/third-party-apps-and-tools/vtk.md)
+- [3D Slicer](https://lfdocs.lookingglassfactory.com/software/third-party-apps-and-tools/3d-slicer.md)
+- [Community Made Tools & Projects](https://lfdocs.lookingglassfactory.com/software/third-party-apps-and-tools/community-made-tools-and-projects.md): Quick overview of community made tools & projects!
+- [Hologram 101](https://lfdocs.lookingglassfactory.com/keyconcepts/key-concepts.md): Capturing and displaying holograms can be achieved with a variety of methods, including depth maps, camera rail captures, Neural Radiance fields (NERFs), and more.
+- [Making great holograms](https://lfdocs.lookingglassfactory.com/keyconcepts/key-concepts/making-great-holograms.md): Whether you're making holograms with depth photos, or using digital tools like Blender or Unity, there are a few guidelines that can help make your holograms stand out from the crowd.
+- [Holograms in the real world](https://lfdocs.lookingglassfactory.com/keyconcepts/key-concepts/holograms-in-the-real-world.md): Capturing the real world in 3D is exciting, but can be challenging. The documentation below will guide you along with a few suggested methods for capturing the real world in 3D.
+- [Holograms, but virtual](https://lfdocs.lookingglassfactory.com/keyconcepts/key-concepts/holograms-but-virtual.md): A ton of content exists in 3D already in digital software. This page will explain how to capture holograms using programs we don't currently have direct plugins for.
+- [How does Looking Glass Work?](https://lfdocs.lookingglassfactory.com/keyconcepts/how-it-works.md): Learn how Looking Glass displays create 3D, group viewable holographic images.
+- [Virtual Camera](https://lfdocs.lookingglassfactory.com/keyconcepts/camera.md)
+- [3D Design Guidelines](https://lfdocs.lookingglassfactory.com/keyconcepts/3d-design-guidelines.md)
+- [Lighting](https://lfdocs.lookingglassfactory.com/keyconcepts/3d-design-guidelines/lighting.md)
+- [Post-Processing](https://lfdocs.lookingglassfactory.com/keyconcepts/3d-design-guidelines/post-processing.md)
+- [Scene Composition](https://lfdocs.lookingglassfactory.com/keyconcepts/3d-design-guidelines/scene-composition.md)
+- [Materials & Textures](https://lfdocs.lookingglassfactory.com/keyconcepts/3d-design-guidelines/materials-textures.md)
+- [Performance](https://lfdocs.lookingglassfactory.com/keyconcepts/3d-design-guidelines/performance.md)
+- [Quilts](https://lfdocs.lookingglassfactory.com/keyconcepts/quilts.md)
+- [Quilt Video Encoding](https://lfdocs.lookingglassfactory.com/keyconcepts/quilts/quilt-video-encoding.md): This page goes over video encoding details needed for making Quilt Videos as performant as possible.
+- [Light Fields](https://lfdocs.lookingglassfactory.com/keyconcepts/capturing-a-lightfield.md)
+- [Linear Light Field Capture](https://lfdocs.lookingglassfactory.com/keyconcepts/capturing-a-lightfield/linear-light-field-capture.md)
+- [Filming a Looking Glass](https://lfdocs.lookingglassfactory.com/keyconcepts/filming-a-looking-glass.md): This page includes tips for filming a Looking Glass Display, to make your content pop!
+- [Convert Any Image into a Hologram](https://lfdocs.lookingglassfactory.com/community/convert-any-image-into-a-hologram.md): Using the power of AI and some Looking Glass magic you can now turn any image into a hologram in just seconds. Give it a try at 🔗 blocks.glass
+- [Convert Any Video into a Hologram](https://lfdocs.lookingglassfactory.com/community/convert-any-video-into-a-hologram.md): Transform your 2D videos into stunning 3D holograms using AI-powered depth estimation tools and Looking Glass displays. Create immersive holographic videos in minutes!
+- [Capturing Light Fields in Maya](https://lfdocs.lookingglassfactory.com/community/capturing-light-fields-in-maya.md)
+- [Using ShaderToy with Looking Glass](https://lfdocs.lookingglassfactory.com/community/shadertoy-tutorial.md)
+- [Sculpting with Adobe Medium and Looking Glass](https://lfdocs.lookingglassfactory.com/community/adobe-medium-tutorial.md)
+- [Turn Videogames Holographic with Refract](https://lfdocs.lookingglassfactory.com/community/refract.md): Refract & Reglass are developed by Jared Bienz
+- [Building with Leap Motion](https://lfdocs.lookingglassfactory.com/community/using-leap-motion-with-looking-glass.md)
+- [Legacy Hardware](https://lfdocs.lookingglassfactory.com/legacy/legacy-hardware.md)
+- [Looking Glass 8.9"](https://lfdocs.lookingglassfactory.com/legacy/legacy-hardware/8-9.md)
+- [Looking Glass 15.6"](https://lfdocs.lookingglassfactory.com/legacy/legacy-hardware/15-6.md)
+- [Looking Glass 8K](https://lfdocs.lookingglassfactory.com/legacy/legacy-hardware/8k.md): This is the setup guide for the Looking Glass 8K Gen1 units, for Looking Glass 32" documentation please see the Looking Glass 32" page.
+- [Looking Glass 16"](https://lfdocs.lookingglassfactory.com/legacy/legacy-hardware/looking-glass-16.md)
+- [Looking Glass 32"](https://lfdocs.lookingglassfactory.com/legacy/legacy-hardware/looking-glass-32.md): This is the setup guide for the Looking Glass 32"
+- [Looking Glass Pro](https://lfdocs.lookingglassfactory.com/legacy/legacy-hardware/pro.md)
+- [Legacy Software](https://lfdocs.lookingglassfactory.com/legacy/legacy-software.md)
+- [Liteforms™ Desktop App](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/liteforms.md): Liteforms™  is a holographic conversational character platform powered by ChatGPT.
+- [Get Started on Windows](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/liteforms/get-started-on-windows.md): This page will guide you through getting started with Liteforms!
+- [Get Started on MacOS](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/liteforms/get-started-on-macos.md): This page will guide you through getting started with Liteforms!
+- [Making Custom Liteforms](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/liteforms/making-custom-liteforms.md): The Liteforms app allows you to create custom Liteforms with custom personas and knowledge.
+- [Configure Liteforms for Kiosk Setup](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/liteforms/configure-liteforms-for-kiosk-setup.md)
+- [3D Model Importer](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/3d-model-importer.md)
+- [3D Model Importer App Guide](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/3d-model-importer/guide.md)
+- [3D Model Importer App Reference](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/3d-model-importer/reference.md)
+- [Diorama](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/diorama.md)
+- [Change Log](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/diorama/change-log.md)
+- [Depth Recorder](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/depth-recorder.md)
+- [Lightfield Photo App](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/lightfield-photo-app.md)
+- [Looking Glass Core Overview](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/index.md)
+- [Looking Glass Core SDK](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/core-sdk.md)
+- [C API Overview](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/core-sdk/index-1.md)
+- [HoloPlayCore.h](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/core-sdk/index-1/index.md)
+- [State Functions](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/core-sdk/index-1/index/state-functions.md)
+- [General-Query-Functions](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/core-sdk/index-1/index/general-query-functions.md)
+- [Device-Query-Functions](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/core-sdk/index-1/index/device-query-functions.md)
+- [libHoloPlayCore.h](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/core-sdk/index-1/libholoplaycore.md)
+- [HoloPlayShaders.h](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/core-sdk/index-1/holoplayshaders.md)
+- [Looking Glass Core JS](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/corejs.md)
+- [API](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/corejs/api.md)
+- [HoloPlayCore.Client](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/corejs/api/client.md)
+- [HoloPlayCore.Message](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/corejs/api/message.md)
+- [HoloPlay Service Related](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/corejs/api/hops-related.md)
+- [examples](https://lfdocs.lookingglassfactory.com/legacy/legacy-software/corejs/api/examples.md)
+- [Contact Us](https://lfdocs.lookingglassfactory.com/contacting-us.md)
+- [FAQ & Troubleshooting](https://lfdocs.lookingglassfactory.com/faq-and-troubleshooting.md): A running list of troubleshooting items to troubleshoot your Looking Glass displays

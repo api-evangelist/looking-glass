@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: derived
+source: >-
+  https://docs.lookingglassfactory.com/software/looking-glass-bridge-sdk/web-application-integration
+  + https://github.com/Looking-Glass/bridge.js + openapi/looking-glass-bridge-openapi.yml
+transport:
+  protocol: http
+  base_url: http://localhost:33334/
+  scope: loopback-only
+  method: All operations are HTTP POST with a JSON body (even reads).
+authentication:
+  style: none
+  detail: Loopback trusted-origin boundary; no keys or tokens. See authentication/looking-glass-authentication.yml
+sessions:
+  concept: orchestration
+  detail: >-
+    enter_orchestration returns an orchestration token that scopes a
+    multi-app session; the token is passed on subsequent calls so several
+    apps can coordinate against the same Bridge instance.
+error_envelope:
+  shape: '{ "success": boolean, "response": object|null }'
+  detail: >-
+    Every endpoint returns the same envelope. success:false with response:null
+    signals failure; there is no RFC 9457 problem+json surface.
+idempotency:
+  supported: false
+  detail: No idempotency-key header or contract is documented for the Bridge API.
+pagination:
+  supported: false
+  detail: No paginated collection endpoints; displays and playlists are returned inline.
+versioning:
+  scheme: endpoint
+  detail: >-
+    bridge_version and api_version endpoints report the running Bridge build
+    and API version. The vendor notes endpoint signatures are under active
+    development.
+cross_links:
+  authentication: authentication/looking-glass-authentication.yml
+  openapi: openapi/looking-glass-bridge-openapi.yml

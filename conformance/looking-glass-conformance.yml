@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/looking-glass-bridge-openapi.yml
+standards:
+  - id: openapi-3.1
+    conforms: true
+    evidence: Repo publishes an OpenAPI 3.1 description of the Bridge REST API.
+  - id: rest-json
+    conforms: true
+    evidence: All operations exchange JSON over HTTP.
+  - id: oauth2
+    conforms: false
+    evidence: No OAuth2 security scheme; the local API is unauthenticated.
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors use a custom { success, response } envelope, not application/problem+json.
+  - id: idempotency
+    conforms: false
+    evidence: No idempotency-key contract documented.

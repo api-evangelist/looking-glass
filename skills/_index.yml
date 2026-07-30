@@ -1,0 +1,14 @@
+generated: '2026-07-20'
+method: generated
+skills:
+  - file: looking-glass-cast-hologram.md
+    name: Cast a hologram to a Looking Glass display
+    api: openapi/looking-glass-bridge-openapi.yml
+    operations:
+      - enter_orchestration
+      - available_output_devices
+      - instance_playlist
+      - insert_playlist_entry
+      - play_playlist
+      - show_window
+      - transport_control_seek_to_index

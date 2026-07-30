@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: derived
+source: openapi/looking-glass-bridge-openapi.yml + https://github.com/Looking-Glass/bridge.js
+entities:
+  - name: Orchestration
+    description: A multi-app Bridge session identified by an orchestration token.
+  - name: Display
+    description: A physical Looking Glass light field display connected to Bridge.
+  - name: Playlist
+    description: An ordered collection of hologram entries cast to a display.
+  - name: PlaylistEntry
+    description: A single hologram (Quilt or RGBD image/video) within a playlist.
+  - name: Hologram
+    description: A Quilt or RGBD media asset (JPG/PNG image or MP4/WebM video) rendered on the display.
+relationships:
+  - from: Orchestration
+    to: Display
+    kind: has_many
+    via: available_output_devices
+  - from: Orchestration
+    to: Playlist
+    kind: has_many
+    via: orchestration
+  - from: Playlist
+    to: PlaylistEntry
+    kind: has_many
+    via: playlist_name
+  - from: PlaylistEntry
+    to: Hologram
+    kind: has_one
+    via: uri

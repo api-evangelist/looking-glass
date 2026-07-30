@@ -1,0 +1,19 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Looking Glass Bridge API
+  version: 1.0.0
+extends: openapi/looking-glass-bridge-openapi.yml
+actions:
+  - target: $.info
+    update:
+      x-apievangelist-rating: 3
+      x-api-evangelist: https://apievangelist.com
+      x-agent-ready: partial
+  - target: $.info
+    update:
+      x-scope: loopback-local
+      x-auth-model: none
+  - target: $.tags
+    update:
+      - name: Version
+        x-agentic-access: read

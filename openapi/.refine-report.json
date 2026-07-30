@@ -1,0 +1,24 @@
+{
+  "provider": "looking-glass",
+  "sources": [
+    "looking-glass-autostart-api-openapi.yml",
+    "looking-glass-devices-api-openapi.yml",
+    "looking-glass-orchestration-api-openapi.yml",
+    "looking-glass-playback-api-openapi.yml",
+    "looking-glass-playlist-api-openapi.yml",
+    "looking-glass-version-api-openapi.yml"
+  ],
+  "outputs": [
+    "looking-glass-autostart-api-openapi.yml",
+    "looking-glass-devices-api-openapi.yml",
+    "looking-glass-orchestration-api-openapi.yml",
+    "looking-glass-playback-api-openapi.yml",
+    "looking-glass-playlist-api-openapi.yml",
+    "looking-glass-version-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
