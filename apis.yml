@@ -1,9 +1,32 @@
 aid: looking-glass
 name: Looking Glass
-description: Looking Glass is a company surfaced as a portfolio company of uncork-capital and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Looking Glass Factory builds light field (holographic) displays — group-viewable
+  3D screens ranging from the pocket-sized Looking Glass Go to 16", 27", 32" and 65"
+  panels — plus the software that drives them. For developers, the core surface is
+  Looking Glass Bridge: a local runtime that exposes an HTTP REST API on
+  http://localhost:33334/ for enumerating connected displays, opening the media
+  player, building playlists of Quilt and RGBD holograms, and controlling playback.
+  Around it Looking Glass ships official client libraries — the typesafe bridge.js
+  (@lookingglass/bridge), a WebXR polyfill (@lookingglass/webxr) that targets the
+  displays from any WebXR framework, a Python Bridge SDK, the legacy HoloPlay Core
+  C/C++/C# SDK, and engine plugins for Unity, Unreal and Blender. Looking Glass
+  Blocks (blocks.glass) hosts holograms on the internet. The company is backed by
+  Uncork Capital and headquartered in Brooklyn, New York.
 url: https://raw.githubusercontent.com/api-evangelist/looking-glass/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: open
+  trial: false
+  try_now: false
+  public: true
+  label: Open access
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://lookingglassfactory.com/favicon.ico
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +35,84 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-apis: []
+- Holographic Displays
+- Light Field
+- 3D
+- Developer Tools
+- WebXR
+- Hardware
+- Holograms
+- Media Player
+apis:
+- aid: looking-glass:looking-glass-autostart-api
+  name: Looking Glass Autostart API
+  description: Playlists that auto-play when Bridge starts
+  humanURL: >-
+    https://docs.lookingglassfactory.com/software/looking-glass-bridge-sdk/web-application-integration
+  baseURL: http://localhost:33334/
+  tags:
+  - Autostart
+  properties:
+  - type: OpenAPI
+    url: openapi/looking-glass-autostart-api-openapi.yml
+- aid: looking-glass:looking-glass-devices-api
+  name: Looking Glass Devices API
+  description: Enumerate connected Looking Glass displays
+  humanURL: >-
+    https://docs.lookingglassfactory.com/software/looking-glass-bridge-sdk/web-application-integration
+  baseURL: http://localhost:33334/
+  tags:
+  - Devices
+  properties:
+  - type: OpenAPI
+    url: openapi/looking-glass-devices-api-openapi.yml
+- aid: looking-glass:looking-glass-orchestration-api
+  name: Looking Glass Orchestration API
+  description: Multi-user Bridge sessions (orchestrations)
+  humanURL: >-
+    https://docs.lookingglassfactory.com/software/looking-glass-bridge-sdk/web-application-integration
+  baseURL: http://localhost:33334/
+  tags:
+  - Orchestration
+  properties:
+  - type: OpenAPI
+    url: openapi/looking-glass-orchestration-api-openapi.yml
+- aid: looking-glass:looking-glass-playback-api
+  name: Looking Glass Playback API
+  description: Transport controls for the Bridge media player
+  humanURL: >-
+    https://docs.lookingglassfactory.com/software/looking-glass-bridge-sdk/web-application-integration
+  baseURL: http://localhost:33334/
+  tags:
+  - Playback
+  properties:
+  - type: OpenAPI
+    url: openapi/looking-glass-playback-api-openapi.yml
+- aid: looking-glass:looking-glass-playlist-api
+  name: Looking Glass Playlist API
+  description: Create, edit and delete hologram playlists
+  humanURL: >-
+    https://docs.lookingglassfactory.com/software/looking-glass-bridge-sdk/web-application-integration
+  baseURL: http://localhost:33334/
+  tags:
+  - Playlist
+  properties:
+  - type: OpenAPI
+    url: openapi/looking-glass-playlist-api-openapi.yml
+- aid: looking-glass:looking-glass-version-api
+  name: Looking Glass Version API
+  description: Bridge and API version information
+  humanURL: >-
+    https://docs.lookingglassfactory.com/software/looking-glass-bridge-sdk/web-application-integration
+  baseURL: http://localhost:33334/
+  tags:
+  - Version
+  properties:
+  - type: OpenAPI
+    url: openapi/looking-glass-version-api-openapi.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -24,3 +121,54 @@ maintainers:
 common:
 - type: Website
   url: https://lookingglassfactory.com
+- type: DeveloperPortal
+  url: https://docs.lookingglassfactory.com
+- type: Documentation
+  url: https://docs.lookingglassfactory.com
+- type: APIReference
+  url: https://docs.lookingglassfactory.com/software/looking-glass-bridge-sdk/web-application-integration
+- type: GitHubOrganization
+  url: https://github.com/Looking-Glass
+- type: Blog
+  url: https://blog.lookingglassfactory.com
+- type: Pricing
+  url: https://checkout.lookingglassfactory.com
+- type: SignUp
+  url: https://blocks.glass
+- type: TermsOfService
+  url: https://lookingglassfactory.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://lookingglassfactory.com/privacy-policy
+- type: OpenAPI
+  url: openapi/looking-glass-bridge-openapi.yml
+- type: Overlay
+  url: overlays/looking-glass-bridge-overlay.yaml
+- type: Packages
+  url: packages/looking-glass-packages.yml
+- type: SDKs
+  url: packages/looking-glass-packages.yml
+- type: MCPServer
+  url: mcp/looking-glass-mcp.yml
+- type: LLMsTxt
+  url: llms/looking-glass-llms.txt
+- type: Authentication
+  url: authentication/looking-glass-authentication.yml
+- type: Conventions
+  url: conventions/looking-glass-conventions.yml
+- type: Conformance
+  url: conformance/looking-glass-conformance.yml
+- type: DataModel
+  url: data-model/looking-glass-data-model.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: DomainSecurity
+  url: security/looking-glass-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/looking-glass-vulnerability-disclosure.yml
+- type: Security
+  url: https://lookingglassfactory.com/product-security-policy
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 13
+  pass: local-v1
