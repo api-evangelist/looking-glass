@@ -140,7 +140,7 @@ common:
 - type: PrivacyPolicy
   url: https://lookingglassfactory.com/privacy-policy
 - type: OpenAPI
-  url: openapi/looking-glass-bridge-openapi.yml
+  url: openapi/_original/looking-glass-bridge-openapi.yml
 - type: Overlay
   url: overlays/looking-glass-bridge-overlay.yaml
 - type: Packages
