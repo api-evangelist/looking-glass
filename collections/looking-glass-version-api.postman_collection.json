@@ -1,0 +1,192 @@
+{
+  "item": [
+    {
+      "id": "501c88fd-7991-4981-8683-114f78d0b13a",
+      "name": "Version",
+      "description": {
+        "content": "Bridge and API version information",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0ea57993-17f0-49ca-8a51-a6c3176dffab",
+          "name": "Get the running Looking Glass Bridge version",
+          "request": {
+            "name": "Get the running Looking Glass Bridge version",
+            "description": {},
+            "url": {
+              "path": [
+                "bridge_version"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "<object>",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "8fddd31b-5cfb-4e5b-bd33-ed84024c5a90",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "bridge_version"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c244dfba-f26e-4b0a-b22e-de57e1890b01",
+          "name": "Get the Bridge HTTP API version",
+          "request": {
+            "name": "Get the Bridge HTTP API version",
+            "description": {},
+            "url": {
+              "path": [
+                "api_version"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "<object>",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "3e9950ca-49ca-4a0d-82d1-179031217196",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "api_version"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:33334/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "6f58159c-dae1-4d93-85d3-3d06ffa7ec2c",
+    "name": "Looking Glass Bridge Autostart Version API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "HTTP REST API exposed by Looking Glass Bridge, the local runtime application that connects a host machine to Looking Glass holographic (light field) displays. Web and native applications call this local API to query connected displays, open the Bridge media player, build and control playlists of Quilt and RGBD holograms, and drive playback. The API is served on the loopback interface only (http://localhost:33334/); every operation is an HTTP POST with a JSON request body and returns a JSON envelope of the shape { \"success\": boolean, \"response\": object|null }. The official, typesafe way to consume this API is the @lookingglass/bridge (bridge.js) client library. This description was generated by the API Evangelist enrichment pipeline from Looking Glass's public documentation and the open-source bridge.js client; endpoint signatures are, per the vendor, under active development.\n\nContact Support:\n Name: Looking Glass Factory",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Looking Glass Bridge Autostart Orchestration API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Orchestration",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Start (or join) a Bridge orchestration session and receive an orchestration token",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/enter_orchestration",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Start (or join) a Bridge orchestration session and receive an orchestration token"
+        },
+        {
+          "info": {
+            "name": "Leave a Bridge orchestration session",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/exit_orchestration",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Leave a Bridge orchestration session"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,192 @@
+{
+  "item": [
+    {
+      "id": "25afcf5c-b879-437b-aac6-a5f8188a3850",
+      "name": "Orchestration",
+      "description": {
+        "content": "Multi-user Bridge sessions (orchestrations)",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "17f6f4dd-aa9c-4d3b-b82f-384e2a3b8ed4",
+          "name": "Start (or join) a Bridge orchestration session and receive an orchestration token",
+          "request": {
+            "name": "Start (or join) a Bridge orchestration session and receive an orchestration token",
+            "description": {},
+            "url": {
+              "path": [
+                "enter_orchestration"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "54bc9d54-4655-400b-a040-4c1d6a4ee5a0",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "enter_orchestration"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": false,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "dda9ad5f-4233-4dc3-a694-b357d849900f",
+          "name": "Leave a Bridge orchestration session",
+          "request": {
+            "name": "Leave a Bridge orchestration session",
+            "description": {},
+            "url": {
+              "path": [
+                "exit_orchestration"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "b22674f6-2415-4e49-b043-a9a8e8698e3a",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "exit_orchestration"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": false,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:33334/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "9babfa68-5684-4a55-b5ae-2b4ca1b5d50a",
+    "name": "Looking Glass Bridge Autostart Orchestration API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "HTTP REST API exposed by Looking Glass Bridge, the local runtime application that connects a host machine to Looking Glass holographic (light field) displays. Web and native applications call this local API to query connected displays, open the Bridge media player, build and control playlists of Quilt and RGBD holograms, and drive playback. The API is served on the loopback interface only (http://localhost:33334/); every operation is an HTTP POST with a JSON request body and returns a JSON envelope of the shape { \"success\": boolean, \"response\": object|null }. The official, typesafe way to consume this API is the @lookingglass/bridge (bridge.js) client library. This description was generated by the API Evangelist enrichment pipeline from Looking Glass's public documentation and the open-source bridge.js client; endpoint signatures are, per the vendor, under active development.\n\nContact Support:\n Name: Looking Glass Factory",
+      "type": "text/plain"
+    }
+  }
+}

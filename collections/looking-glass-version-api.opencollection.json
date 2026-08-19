@@ -1,0 +1,48 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Looking Glass Bridge Autostart Version API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Version",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the running Looking Glass Bridge version",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/bridge_version",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Get the running Looking Glass Bridge version"
+        },
+        {
+          "info": {
+            "name": "Get the Bridge HTTP API version",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/api_version",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Get the Bridge HTTP API version"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

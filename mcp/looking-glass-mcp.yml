@@ -2,36 +2,40 @@ generated: '2026-07-20'
 method: derived
 status: candidate
 source: openapi/looking-glass-bridge-openapi.yml
-notes: >-
-  No official hosted/remote MCP server was found for Looking Glass. This is a
-  candidate tool list derived one-to-one from the documented Looking Glass
-  Bridge REST operations. A real server would run locally alongside Bridge
-  (stdio transport), since the Bridge API is loopback-only.
+notes: No official hosted/remote MCP server was found for Looking Glass. This is a candidate tool list
+  derived one-to-one from the documented Looking Glass Bridge REST operations. A real server would run
+  locally alongside Bridge (stdio transport), since the Bridge API is loopback-only.
 server:
   name: looking-glass-bridge
   transport: stdio
 tools:
-  - name: bridge_version
-    description: Get the running Looking Glass Bridge version
-    source_operation: openapi/looking-glass-bridge-openapi.yml#bridge_version
-  - name: available_output_devices
-    description: List the Looking Glass displays connected to Bridge
-    source_operation: openapi/looking-glass-bridge-openapi.yml#available_output_devices
-  - name: enter_orchestration
-    description: Start or join a Bridge orchestration session
-    source_operation: openapi/looking-glass-bridge-openapi.yml#enter_orchestration
-  - name: instance_playlist
-    description: Create a new hologram playlist
-    source_operation: openapi/looking-glass-bridge-openapi.yml#instance_playlist
-  - name: insert_playlist_entry
-    description: Add a Quilt or RGBD hologram to a playlist
-    source_operation: openapi/looking-glass-bridge-openapi.yml#insert_playlist_entry
-  - name: play_playlist
-    description: Play a playlist on the Looking Glass display
-    source_operation: openapi/looking-glass-bridge-openapi.yml#play_playlist
-  - name: show_window
-    description: Show or hide the Bridge media player window
-    source_operation: openapi/looking-glass-bridge-openapi.yml#show_window
-  - name: transport_control_seek_to_index
-    description: Jump to a specific hologram in the playlist
-    source_operation: openapi/looking-glass-bridge-openapi.yml#transport_control_seek_to_index
+- name: bridge_version
+  description: Get the running Looking Glass Bridge version
+  source_operation: openapi/looking-glass-bridge-openapi.yml#bridge_version
+- name: available_output_devices
+  description: List the Looking Glass displays connected to Bridge
+  source_operation: openapi/looking-glass-bridge-openapi.yml#available_output_devices
+- name: enter_orchestration
+  description: Start or join a Bridge orchestration session
+  source_operation: openapi/looking-glass-bridge-openapi.yml#enter_orchestration
+- name: instance_playlist
+  description: Create a new hologram playlist
+  source_operation: openapi/looking-glass-bridge-openapi.yml#instance_playlist
+- name: insert_playlist_entry
+  description: Add a Quilt or RGBD hologram to a playlist
+  source_operation: openapi/looking-glass-bridge-openapi.yml#insert_playlist_entry
+- name: play_playlist
+  description: Play a playlist on the Looking Glass display
+  source_operation: openapi/looking-glass-bridge-openapi.yml#play_playlist
+- name: show_window
+  description: Show or hide the Bridge media player window
+  source_operation: openapi/looking-glass-bridge-openapi.yml#show_window
+- name: transport_control_seek_to_index
+  description: Jump to a specific hologram in the playlist
+  source_operation: openapi/looking-glass-bridge-openapi.yml#transport_control_seek_to_index
+deployment:
+  mode: none
+  verified: derived
+  tools: 8
+  checked: '2026-08-12'
+  source: catalog MCP census

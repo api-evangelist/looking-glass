@@ -1,0 +1,63 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Looking Glass Bridge Autostart API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Autostart",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the playlist configured to auto-play when Bridge starts",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/get_autostart_playlist",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Get the playlist configured to auto-play when Bridge starts"
+        },
+        {
+          "info": {
+            "name": "Set the playlist to auto-play when Bridge starts",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/set_autostart_playlist",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Set the playlist to auto-play when Bridge starts"
+        },
+        {
+          "info": {
+            "name": "Set a named playlist to auto-play when Bridge starts",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/set_named_autostart_playlist",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Set a named playlist to auto-play when Bridge starts"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,108 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Looking Glass Bridge Autostart Playlist API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Playlist",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Create a new (empty) playlist instance",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/instance_playlist",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a new (empty) playlist instance"
+        },
+        {
+          "info": {
+            "name": "Create a new Looking Glass Studio playlist instance",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/instance_studio_playlist",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a new Looking Glass Studio playlist instance"
+        },
+        {
+          "info": {
+            "name": "Add a hologram (Quilt or RGBD image/video) entry to a playlist",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/insert_playlist_entry",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Add a hologram (Quilt or RGBD image/video) entry to a playlist"
+        },
+        {
+          "info": {
+            "name": "Update an existing playlist entry",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/update_playlist_entry",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update an existing playlist entry"
+        },
+        {
+          "info": {
+            "name": "Update the parameters of the currently displayed hologram",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/update_current_entry",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update the parameters of the currently displayed hologram"
+        },
+        {
+          "info": {
+            "name": "Delete a playlist",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/delete_playlist",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Delete a playlist"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

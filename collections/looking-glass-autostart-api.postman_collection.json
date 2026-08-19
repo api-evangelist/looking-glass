@@ -1,0 +1,272 @@
+{
+  "item": [
+    {
+      "id": "62dbf028-9743-4c93-acb2-2472c92093bb",
+      "name": "Autostart",
+      "description": {
+        "content": "Playlists that auto-play when Bridge starts",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "9f438f1c-0833-4db1-b08f-dd8e76d717a5",
+          "name": "Get the playlist configured to auto-play when Bridge starts",
+          "request": {
+            "name": "Get the playlist configured to auto-play when Bridge starts",
+            "description": {},
+            "url": {
+              "path": [
+                "get_autostart_playlist"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "a063482c-dde7-46f4-bc3d-141c52ad89d6",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "get_autostart_playlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": false,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "b2ab674c-f322-44fe-9061-3f3052809c5f",
+          "name": "Set the playlist to auto-play when Bridge starts",
+          "request": {
+            "name": "Set the playlist to auto-play when Bridge starts",
+            "description": {},
+            "url": {
+              "path": [
+                "set_autostart_playlist"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\",\n  \"playlist_name\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "9087eca2-b50b-413d-9fe0-d0d2bf89da42",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "set_autostart_playlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": false,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f8b50113-710b-443a-8cbd-1fbb44f3bffe",
+          "name": "Set a named playlist to auto-play when Bridge starts",
+          "request": {
+            "name": "Set a named playlist to auto-play when Bridge starts",
+            "description": {},
+            "url": {
+              "path": [
+                "set_named_autostart_playlist"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\",\n  \"playlist_name\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "e2169b93-2da4-47f8-a27c-443f6a0edf2a",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "set_named_autostart_playlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": false,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:33334/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "5933d140-3c7f-4cd5-843f-cec15d4d7b90",
+    "name": "Looking Glass Bridge Autostart API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "HTTP REST API exposed by Looking Glass Bridge, the local runtime application that connects a host machine to Looking Glass holographic (light field) displays. Web and native applications call this local API to query connected displays, open the Bridge media player, build and control playlists of Quilt and RGBD holograms, and drive playback. The API is served on the loopback interface only (http://localhost:33334/); every operation is an HTTP POST with a JSON request body and returns a JSON envelope of the shape { \"success\": boolean, \"response\": object|null }. The official, typesafe way to consume this API is the @lookingglass/bridge (bridge.js) client library. This description was generated by the API Evangelist enrichment pipeline from Looking Glass's public documentation and the open-source bridge.js client; endpoint signatures are, per the vendor, under active development.\n\nContact Support:\n Name: Looking Glass Factory",
+      "type": "text/plain"
+    }
+  }
+}

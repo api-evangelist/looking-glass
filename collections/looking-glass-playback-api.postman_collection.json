@@ -1,0 +1,592 @@
+{
+  "item": [
+    {
+      "id": "f0e8d9e5-c1f7-43f0-882b-f10c9697ea69",
+      "name": "Playback",
+      "description": {
+        "content": "Transport controls for the Bridge media player",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d06ca1ee-bcfa-44aa-93a3-7f09f77fc753",
+          "name": "Show or hide the Bridge media player window on the display",
+          "request": {
+            "name": "Show or hide the Bridge media player window on the display",
+            "description": {},
+            "url": {
+              "path": [
+                "show_window"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "62cd286c-34b0-44b0-a6d1-a408f5d872cf",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "show_window"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "61f69716-ed76-4ab3-8598-ecae780071b0",
+          "name": "Play a playlist on the Looking Glass display",
+          "request": {
+            "name": "Play a playlist on the Looking Glass display",
+            "description": {},
+            "url": {
+              "path": [
+                "play_playlist"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\",\n  \"playlist_name\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "30456ffb-f5ff-41db-bc53-b367a5c1c17d",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "play_playlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "fe0a4a06-d734-4c30-88d7-1ff7bc2aa500",
+          "name": "Resume playback",
+          "request": {
+            "name": "Resume playback",
+            "description": {},
+            "url": {
+              "path": [
+                "transport_control_play"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "567536b7-aa45-477d-9a96-4bbcb1d7182e",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "transport_control_play"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "d25b2e21-ee80-4dc0-8342-86f113fb252d",
+          "name": "Pause playback",
+          "request": {
+            "name": "Pause playback",
+            "description": {},
+            "url": {
+              "path": [
+                "transport_control_pause"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "8c85b6e0-9454-4876-af83-d1021eef45ed",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "transport_control_pause"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "c78888cb-bea5-4749-b127-36b215944cf0",
+          "name": "Skip to the next hologram in the playlist",
+          "request": {
+            "name": "Skip to the next hologram in the playlist",
+            "description": {},
+            "url": {
+              "path": [
+                "transport_control_next"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "c1ebb1de-1add-497d-9f55-d65f7e0918c9",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "transport_control_next"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2d1c4f56-99d7-4b75-989a-a9c78332ee7d",
+          "name": "Skip to the previous hologram in the playlist",
+          "request": {
+            "name": "Skip to the previous hologram in the playlist",
+            "description": {},
+            "url": {
+              "path": [
+                "transport_control_previous"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "4d5ef807-5e32-48f9-ba72-dd25befe398b",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "transport_control_previous"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0e39416d-ccc7-4eec-afd4-cd32396f79bf",
+          "name": "Jump to a specific index within the playlist",
+          "request": {
+            "name": "Jump to a specific index within the playlist",
+            "description": {},
+            "url": {
+              "path": [
+                "transport_control_seek_to_index"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\",\n  \"index\": \"<integer>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "3834b7e2-4fb0-4a7e-bdc1-1a7dcae7cade",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "transport_control_seek_to_index"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:33334/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "c684f858-848e-461b-80d6-f4b0f716edc8",
+    "name": "Looking Glass Bridge Autostart Playback API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "HTTP REST API exposed by Looking Glass Bridge, the local runtime application that connects a host machine to Looking Glass holographic (light field) displays. Web and native applications call this local API to query connected displays, open the Bridge media player, build and control playlists of Quilt and RGBD holograms, and drive playback. The API is served on the loopback interface only (http://localhost:33334/); every operation is an HTTP POST with a JSON request body and returns a JSON envelope of the shape { \"success\": boolean, \"response\": object|null }. The official, typesafe way to consume this API is the @lookingglass/bridge (bridge.js) client library. This description was generated by the API Evangelist enrichment pipeline from Looking Glass's public documentation and the open-source bridge.js client; endpoint signatures are, per the vendor, under active development.\n\nContact Support:\n Name: Looking Glass Factory",
+      "type": "text/plain"
+    }
+  }
+}

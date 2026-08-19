@@ -1,0 +1,33 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Looking Glass Bridge Autostart Devices API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Devices",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Query the Looking Glass displays currently connected to Bridge",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/available_output_devices",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Query the Looking Glass displays currently connected to Bridge"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

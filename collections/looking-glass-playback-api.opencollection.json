@@ -1,0 +1,123 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Looking Glass Bridge Autostart Playback API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Playback",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Show or hide the Bridge media player window on the display",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/show_window",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Show or hide the Bridge media player window on the display"
+        },
+        {
+          "info": {
+            "name": "Play a playlist on the Looking Glass display",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/play_playlist",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Play a playlist on the Looking Glass display"
+        },
+        {
+          "info": {
+            "name": "Resume playback",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/transport_control_play",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Resume playback"
+        },
+        {
+          "info": {
+            "name": "Pause playback",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/transport_control_pause",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Pause playback"
+        },
+        {
+          "info": {
+            "name": "Skip to the next hologram in the playlist",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/transport_control_next",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Skip to the next hologram in the playlist"
+        },
+        {
+          "info": {
+            "name": "Skip to the previous hologram in the playlist",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/transport_control_previous",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Skip to the previous hologram in the playlist"
+        },
+        {
+          "info": {
+            "name": "Jump to a specific index within the playlist",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "http://localhost:33334/transport_control_seek_to_index",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Jump to a specific index within the playlist"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

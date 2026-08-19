@@ -1,0 +1,512 @@
+{
+  "item": [
+    {
+      "id": "08062622-8338-43de-abc1-770c11ab8729",
+      "name": "Playlist",
+      "description": {
+        "content": "Create, edit and delete hologram playlists",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "02506b76-9076-4c07-9d49-4d1f0e0f9bc7",
+          "name": "Create a new (empty) playlist instance",
+          "request": {
+            "name": "Create a new (empty) playlist instance",
+            "description": {},
+            "url": {
+              "path": [
+                "instance_playlist"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "bd7b7aff-a455-49cb-942c-6fe5d585c364",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "instance_playlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "76248adb-4495-4266-a85b-70df54a2f819",
+          "name": "Create a new Looking Glass Studio playlist instance",
+          "request": {
+            "name": "Create a new Looking Glass Studio playlist instance",
+            "description": {},
+            "url": {
+              "path": [
+                "instance_studio_playlist"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "e92023c9-5713-49fa-a638-cdeb1441bcf7",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "instance_studio_playlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ac06fec5-a027-47a6-bf39-bc3020227930",
+          "name": "Add a hologram (Quilt or RGBD image/video) entry to a playlist",
+          "request": {
+            "name": "Add a hologram (Quilt or RGBD image/video) entry to a playlist",
+            "description": {},
+            "url": {
+              "path": [
+                "insert_playlist_entry"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\",\n  \"playlist_name\": \"<string>\",\n  \"uri\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "80d64594-ea97-4e9e-ad30-83351dc502ac",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "insert_playlist_entry"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "66649bd2-0242-4b85-9545-6ff091e54121",
+          "name": "Update an existing playlist entry",
+          "request": {
+            "name": "Update an existing playlist entry",
+            "description": {},
+            "url": {
+              "path": [
+                "update_playlist_entry"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\",\n  \"playlist_name\": \"<string>\",\n  \"uri\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "0818ab67-1075-4573-a73e-eeeb8650c808",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "update_playlist_entry"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "dd9c14b7-1fb5-4504-a776-cc338637908b",
+          "name": "Update the parameters of the currently displayed hologram",
+          "request": {
+            "name": "Update the parameters of the currently displayed hologram",
+            "description": {},
+            "url": {
+              "path": [
+                "update_current_entry"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "d72e147a-faf5-43c5-a33e-f538e2e6cd47",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "update_current_entry"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cfd21d81-2926-4e31-afe8-07b85a54c5b2",
+          "name": "Delete a playlist",
+          "request": {
+            "name": "Delete a playlist",
+            "description": {},
+            "url": {
+              "path": [
+                "delete_playlist"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orchestration\": \"<string>\",\n  \"playlist_name\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "75cc5ffb-2489-4412-9104-94213f8056e6",
+              "name": "Standard Bridge response envelope.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "delete_playlist"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"success\": true,\n  \"response\": {}\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "http://localhost:33334/",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "154078fb-1add-4f42-8dd1-ada8fbcc85f8",
+    "name": "Looking Glass Bridge Autostart Playlist API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "HTTP REST API exposed by Looking Glass Bridge, the local runtime application that connects a host machine to Looking Glass holographic (light field) displays. Web and native applications call this local API to query connected displays, open the Bridge media player, build and control playlists of Quilt and RGBD holograms, and drive playback. The API is served on the loopback interface only (http://localhost:33334/); every operation is an HTTP POST with a JSON request body and returns a JSON envelope of the shape { \"success\": boolean, \"response\": object|null }. The official, typesafe way to consume this API is the @lookingglass/bridge (bridge.js) client library. This description was generated by the API Evangelist enrichment pipeline from Looking Glass's public documentation and the open-source bridge.js client; endpoint signatures are, per the vendor, under active development.\n\nContact Support:\n Name: Looking Glass Factory",
+      "type": "text/plain"
+    }
+  }
+}
