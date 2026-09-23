@@ -1,0 +1,27 @@
+# Front Door AI Index — looking-glass — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: looking-glass
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: lookingglassfactory.com
+  final_host: lookingglassfactory.com
+  ownership: shared
+  owner: looking-glass-factory
+  shares_host_with:
+  - looking-glass-factory
+  inherited_from: null
+  verdict: scored
+  score: null
+  host_score: 6
+  density: null
+  words: 2392
+  tiers:
+    agentic: 0
+    core: 6
+    model: 0
+  ambiguous: 0
+  top_terms:
+    AI: 4
+    generative ai: 2

@@ -1,12 +1,7 @@
 {
   "provider": "looking-glass",
   "sources": [
-    "looking-glass-autostart-api-openapi.yml",
-    "looking-glass-devices-api-openapi.yml",
-    "looking-glass-orchestration-api-openapi.yml",
-    "looking-glass-playback-api-openapi.yml",
-    "looking-glass-playlist-api-openapi.yml",
-    "looking-glass-version-api-openapi.yml"
+    "_original/looking-glass-bridge-openapi.yml"
   ],
   "outputs": [
     "looking-glass-autostart-api-openapi.yml",
@@ -19,6 +14,17 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "looking-glass-bridge-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "looking-glass-autostart-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "looking-glass-devices-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "looking-glass-orchestration-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "looking-glass-playback-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "looking-glass-playlist-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "looking-glass-version-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
