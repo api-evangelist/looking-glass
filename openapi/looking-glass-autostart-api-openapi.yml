@@ -51,19 +51,6 @@ paths:
         '200':
           $ref: '#/components/responses/Envelope'
 components:
-  requestBodies:
-    PlaylistRef:
-      description: References a playlist by name within an orchestration.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/PlaylistRef'
-    Orchestrated:
-      description: Requires the orchestration token for the session.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/OrchestrationRef'
   schemas:
     OrchestrationRef:
       type: object
@@ -102,3 +89,16 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/ResponseEnvelope'
+  requestBodies:
+    Orchestrated:
+      description: Requires the orchestration token for the session.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/OrchestrationRef'
+    PlaylistRef:
+      description: References a playlist by name within an orchestration.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PlaylistRef'

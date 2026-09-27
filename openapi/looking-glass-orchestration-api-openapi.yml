@@ -40,23 +40,6 @@ paths:
         '200':
           $ref: '#/components/responses/Envelope'
 components:
-  requestBodies:
-    Orchestrated:
-      description: Requires the orchestration token for the session.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/OrchestrationRef'
-    EnterOrchestration:
-      description: Optional orchestration name/keyword to create or join a session.
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              name:
-                type: string
-                description: Keyword identifying the orchestration to create or join.
   schemas:
     OrchestrationRef:
       type: object
@@ -87,3 +70,20 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/ResponseEnvelope'
+  requestBodies:
+    Orchestrated:
+      description: Requires the orchestration token for the session.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/OrchestrationRef'
+    EnterOrchestration:
+      description: Optional orchestration name/keyword to create or join a session.
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+                description: Keyword identifying the orchestration to create or join.
