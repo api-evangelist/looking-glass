@@ -51,7 +51,28 @@ paths:
         '200':
           $ref: '#/components/responses/Envelope'
 components:
+  requestBodies:
+    PlaylistRef:
+      description: References a playlist by name within an orchestration.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PlaylistRef'
+    Orchestrated:
+      description: Requires the orchestration token for the session.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/OrchestrationRef'
   schemas:
+    PlaylistRef:
+      type: object
+      properties:
+        orchestration:
+          type: string
+        playlist_name:
+          type: string
+          description: Name of the target playlist.
     OrchestrationRef:
       type: object
       properties:
@@ -74,14 +95,6 @@ components:
           - 'null'
       required:
       - success
-    PlaylistRef:
-      type: object
-      properties:
-        orchestration:
-          type: string
-        playlist_name:
-          type: string
-          description: Name of the target playlist.
   responses:
     Envelope:
       description: Standard Bridge response envelope.
@@ -89,16 +102,3 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/ResponseEnvelope'
-  requestBodies:
-    Orchestrated:
-      description: Requires the orchestration token for the session.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/OrchestrationRef'
-    PlaylistRef:
-      description: References a playlist by name within an orchestration.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/PlaylistRef'

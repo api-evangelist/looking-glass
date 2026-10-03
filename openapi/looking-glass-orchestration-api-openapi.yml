@@ -40,6 +40,13 @@ paths:
         '200':
           $ref: '#/components/responses/Envelope'
 components:
+  responses:
+    Envelope:
+      description: Standard Bridge response envelope.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ResponseEnvelope'
   schemas:
     OrchestrationRef:
       type: object
@@ -63,13 +70,6 @@ components:
           - 'null'
       required:
       - success
-  responses:
-    Envelope:
-      description: Standard Bridge response envelope.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ResponseEnvelope'
   requestBodies:
     Orchestrated:
       description: Requires the orchestration token for the session.

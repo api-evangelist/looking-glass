@@ -29,14 +29,15 @@ paths:
         '200':
           $ref: '#/components/responses/Envelope'
 components:
-  responses:
-    Envelope:
-      description: Standard Bridge response envelope.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ResponseEnvelope'
   schemas:
+    OrchestrationRef:
+      type: object
+      properties:
+        orchestration:
+          type: string
+          description: Orchestration token returned by enter_orchestration.
+      required:
+      - orchestration
     ResponseEnvelope:
       type: object
       description: Standard Bridge response envelope returned by every endpoint.
@@ -51,14 +52,6 @@ components:
           - 'null'
       required:
       - success
-    OrchestrationRef:
-      type: object
-      properties:
-        orchestration:
-          type: string
-          description: Orchestration token returned by enter_orchestration.
-      required:
-      - orchestration
   requestBodies:
     Orchestrated:
       description: Requires the orchestration token for the session.
@@ -66,3 +59,10 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/OrchestrationRef'
+  responses:
+    Envelope:
+      description: Standard Bridge response envelope.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ResponseEnvelope'

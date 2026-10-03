@@ -85,6 +85,12 @@ paths:
           $ref: '#/components/responses/Envelope'
 components:
   requestBodies:
+    PlaylistRef:
+      description: References a playlist by name within an orchestration.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PlaylistRef'
     PlaylistEntry:
       description: A hologram media entry (Quilt or RGBD image/video) to place in a playlist.
       content:
@@ -103,13 +109,15 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/OrchestrationRef'
-    PlaylistRef:
-      description: References a playlist by name within an orchestration.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/PlaylistRef'
   schemas:
+    PlaylistRef:
+      type: object
+      properties:
+        orchestration:
+          type: string
+        playlist_name:
+          type: string
+          description: Name of the target playlist.
     OrchestrationRef:
       type: object
       properties:
@@ -132,14 +140,6 @@ components:
           - 'null'
       required:
       - success
-    PlaylistRef:
-      type: object
-      properties:
-        orchestration:
-          type: string
-        playlist_name:
-          type: string
-          description: Name of the target playlist.
   responses:
     Envelope:
       description: Standard Bridge response envelope.
