@@ -64,23 +64,14 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/OrchestrationRef'
+  responses:
+    Envelope:
+      description: Standard Bridge response envelope.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ResponseEnvelope'
   schemas:
-    PlaylistRef:
-      type: object
-      properties:
-        orchestration:
-          type: string
-        playlist_name:
-          type: string
-          description: Name of the target playlist.
-    OrchestrationRef:
-      type: object
-      properties:
-        orchestration:
-          type: string
-          description: Orchestration token returned by enter_orchestration.
-      required:
-      - orchestration
     ResponseEnvelope:
       type: object
       description: Standard Bridge response envelope returned by every endpoint.
@@ -95,10 +86,19 @@ components:
           - 'null'
       required:
       - success
-  responses:
-    Envelope:
-      description: Standard Bridge response envelope.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ResponseEnvelope'
+    OrchestrationRef:
+      type: object
+      properties:
+        orchestration:
+          type: string
+          description: Orchestration token returned by enter_orchestration.
+      required:
+      - orchestration
+    PlaylistRef:
+      type: object
+      properties:
+        orchestration:
+          type: string
+        playlist_name:
+          type: string
+          description: Name of the target playlist.

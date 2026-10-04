@@ -40,6 +40,13 @@ paths:
         '200':
           $ref: '#/components/responses/Envelope'
 components:
+  requestBodies:
+    Empty:
+      description: No body required.
+      content:
+        application/json:
+          schema:
+            type: object
   responses:
     Envelope:
       description: Standard Bridge response envelope.
@@ -62,10 +69,3 @@ components:
           - 'null'
       required:
       - success
-  requestBodies:
-    Empty:
-      description: No body required.
-      content:
-        application/json:
-          schema:
-            type: object

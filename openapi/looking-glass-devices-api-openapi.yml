@@ -29,29 +29,6 @@ paths:
         '200':
           $ref: '#/components/responses/Envelope'
 components:
-  schemas:
-    OrchestrationRef:
-      type: object
-      properties:
-        orchestration:
-          type: string
-          description: Orchestration token returned by enter_orchestration.
-      required:
-      - orchestration
-    ResponseEnvelope:
-      type: object
-      description: Standard Bridge response envelope returned by every endpoint.
-      properties:
-        success:
-          type: boolean
-          description: Whether the operation succeeded.
-        response:
-          description: Operation payload when successful, otherwise null.
-          type:
-          - object
-          - 'null'
-      required:
-      - success
   requestBodies:
     Orchestrated:
       description: Requires the orchestration token for the session.
@@ -66,3 +43,26 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/ResponseEnvelope'
+  schemas:
+    ResponseEnvelope:
+      type: object
+      description: Standard Bridge response envelope returned by every endpoint.
+      properties:
+        success:
+          type: boolean
+          description: Whether the operation succeeded.
+        response:
+          description: Operation payload when successful, otherwise null.
+          type:
+          - object
+          - 'null'
+      required:
+      - success
+    OrchestrationRef:
+      type: object
+      properties:
+        orchestration:
+          type: string
+          description: Orchestration token returned by enter_orchestration.
+      required:
+      - orchestration

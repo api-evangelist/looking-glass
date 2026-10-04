@@ -40,6 +40,23 @@ paths:
         '200':
           $ref: '#/components/responses/Envelope'
 components:
+  requestBodies:
+    EnterOrchestration:
+      description: Optional orchestration name/keyword to create or join a session.
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+                description: Keyword identifying the orchestration to create or join.
+    Orchestrated:
+      description: Requires the orchestration token for the session.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/OrchestrationRef'
   responses:
     Envelope:
       description: Standard Bridge response envelope.
@@ -48,14 +65,6 @@ components:
           schema:
             $ref: '#/components/schemas/ResponseEnvelope'
   schemas:
-    OrchestrationRef:
-      type: object
-      properties:
-        orchestration:
-          type: string
-          description: Orchestration token returned by enter_orchestration.
-      required:
-      - orchestration
     ResponseEnvelope:
       type: object
       description: Standard Bridge response envelope returned by every endpoint.
@@ -70,20 +79,11 @@ components:
           - 'null'
       required:
       - success
-  requestBodies:
-    Orchestrated:
-      description: Requires the orchestration token for the session.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/OrchestrationRef'
-    EnterOrchestration:
-      description: Optional orchestration name/keyword to create or join a session.
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              name:
-                type: string
-                description: Keyword identifying the orchestration to create or join.
+    OrchestrationRef:
+      type: object
+      properties:
+        orchestration:
+          type: string
+          description: Orchestration token returned by enter_orchestration.
+      required:
+      - orchestration
