@@ -95,13 +95,45 @@ paths:
         '200':
           $ref: '#/components/responses/Envelope'
 components:
-  requestBodies:
+  schemas:
+    OrchestrationRef:
+      type: object
+      properties:
+        orchestration:
+          type: string
+          description: Orchestration token returned by enter_orchestration.
+      required:
+      - orchestration
     PlaylistRef:
-      description: References a playlist by name within an orchestration.
+      type: object
+      properties:
+        orchestration:
+          type: string
+        playlist_name:
+          type: string
+          description: Name of the target playlist.
+    ResponseEnvelope:
+      type: object
+      description: Standard Bridge response envelope returned by every endpoint.
+      properties:
+        success:
+          type: boolean
+          description: Whether the operation succeeded.
+        response:
+          description: Operation payload when successful, otherwise null.
+          type:
+          - object
+          - 'null'
+      required:
+      - success
+  responses:
+    Envelope:
+      description: Standard Bridge response envelope.
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/PlaylistRef'
+            $ref: '#/components/schemas/ResponseEnvelope'
+  requestBodies:
     SeekToIndex:
       description: Seek to a playlist index.
       content:
@@ -120,41 +152,9 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/OrchestrationRef'
-  responses:
-    Envelope:
-      description: Standard Bridge response envelope.
+    PlaylistRef:
+      description: References a playlist by name within an orchestration.
       content:
         application/json:
           schema:
-            $ref: '#/components/schemas/ResponseEnvelope'
-  schemas:
-    ResponseEnvelope:
-      type: object
-      description: Standard Bridge response envelope returned by every endpoint.
-      properties:
-        success:
-          type: boolean
-          description: Whether the operation succeeded.
-        response:
-          description: Operation payload when successful, otherwise null.
-          type:
-          - object
-          - 'null'
-      required:
-      - success
-    OrchestrationRef:
-      type: object
-      properties:
-        orchestration:
-          type: string
-          description: Orchestration token returned by enter_orchestration.
-      required:
-      - orchestration
-    PlaylistRef:
-      type: object
-      properties:
-        orchestration:
-          type: string
-        playlist_name:
-          type: string
-          description: Name of the target playlist.
+            $ref: '#/components/schemas/PlaylistRef'

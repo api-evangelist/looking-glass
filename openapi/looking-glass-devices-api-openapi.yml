@@ -36,13 +36,6 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/OrchestrationRef'
-  responses:
-    Envelope:
-      description: Standard Bridge response envelope.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ResponseEnvelope'
   schemas:
     ResponseEnvelope:
       type: object
@@ -66,3 +59,10 @@ components:
           description: Orchestration token returned by enter_orchestration.
       required:
       - orchestration
+  responses:
+    Envelope:
+      description: Standard Bridge response envelope.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ResponseEnvelope'

@@ -47,13 +47,6 @@ components:
         application/json:
           schema:
             type: object
-  responses:
-    Envelope:
-      description: Standard Bridge response envelope.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ResponseEnvelope'
   schemas:
     ResponseEnvelope:
       type: object
@@ -69,3 +62,10 @@ components:
           - 'null'
       required:
       - success
+  responses:
+    Envelope:
+      description: Standard Bridge response envelope.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ResponseEnvelope'

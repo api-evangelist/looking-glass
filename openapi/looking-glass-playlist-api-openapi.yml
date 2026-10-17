@@ -84,53 +84,7 @@ paths:
         '200':
           $ref: '#/components/responses/Envelope'
 components:
-  requestBodies:
-    PlaylistRef:
-      description: References a playlist by name within an orchestration.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/PlaylistRef'
-    Orchestrated:
-      description: Requires the orchestration token for the session.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/OrchestrationRef'
-    PlaylistEntry:
-      description: A hologram media entry (Quilt or RGBD image/video) to place in a playlist.
-      content:
-        application/json:
-          schema:
-            allOf:
-            - $ref: '#/components/schemas/PlaylistRef'
-            - type: object
-              properties:
-                uri:
-                  type: string
-                  description: Path or URI to the hologram media file.
-  responses:
-    Envelope:
-      description: Standard Bridge response envelope.
-      content:
-        application/json:
-          schema:
-            $ref: '#/components/schemas/ResponseEnvelope'
   schemas:
-    ResponseEnvelope:
-      type: object
-      description: Standard Bridge response envelope returned by every endpoint.
-      properties:
-        success:
-          type: boolean
-          description: Whether the operation succeeded.
-        response:
-          description: Operation payload when successful, otherwise null.
-          type:
-          - object
-          - 'null'
-      required:
-      - success
     OrchestrationRef:
       type: object
       properties:
@@ -147,3 +101,49 @@ components:
         playlist_name:
           type: string
           description: Name of the target playlist.
+    ResponseEnvelope:
+      type: object
+      description: Standard Bridge response envelope returned by every endpoint.
+      properties:
+        success:
+          type: boolean
+          description: Whether the operation succeeded.
+        response:
+          description: Operation payload when successful, otherwise null.
+          type:
+          - object
+          - 'null'
+      required:
+      - success
+  responses:
+    Envelope:
+      description: Standard Bridge response envelope.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ResponseEnvelope'
+  requestBodies:
+    Orchestrated:
+      description: Requires the orchestration token for the session.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/OrchestrationRef'
+    PlaylistRef:
+      description: References a playlist by name within an orchestration.
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/PlaylistRef'
+    PlaylistEntry:
+      description: A hologram media entry (Quilt or RGBD image/video) to place in a playlist.
+      content:
+        application/json:
+          schema:
+            allOf:
+            - $ref: '#/components/schemas/PlaylistRef'
+            - type: object
+              properties:
+                uri:
+                  type: string
+                  description: Path or URI to the hologram media file.
